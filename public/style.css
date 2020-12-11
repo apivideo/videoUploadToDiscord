@@ -127,4 +127,8 @@ body {background-color: white;
     color: #fa5B30;
     font-size: x-large;
 
+  } #footer{
+    font-size: large;
+    color: black;
+    padding:10px;
   }
