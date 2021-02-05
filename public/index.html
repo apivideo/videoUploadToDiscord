@@ -166,7 +166,7 @@
 								//node will update the video on api.video,
 								//and then send on to the servive
 								var pReq = new XMLHttpRequest();
-								pReq.open("POST", "/toDiscord");
+								pReq.open("POST", "/");
 								pReq.setRequestHeader("Content-type", "application/json");
 								pReq.onload = function (oEvent) {
 									document.getElementById("file-update").innerHTML = "Video Posted";
