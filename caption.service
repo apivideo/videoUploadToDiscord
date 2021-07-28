@@ -1,5 +1,5 @@
 [Unit]
-Description=upload.a.video/toDiscord
+Description=caption.a.video
 After=network.target
 
 [Service]

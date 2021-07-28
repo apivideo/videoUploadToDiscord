@@ -36,7 +36,8 @@ const apiVideoKey = process.env.apiProductionKey;
 
 // website demo
 //get request is the initial request - load the HTML page with the form
-app.get('/', (req, res) => {
+app.get('/toDiscord', (req, res) => {
+
 		res.sendFile(path.join(__dirname, '../public', 'index.html'));  
 });
 
@@ -44,8 +45,11 @@ app.get('/', (req, res) => {
 
 
 
-app.post('/', (req, res) => {
+
+
+app.post('/toDiscord', (req, res) => {
 	console.log(req.body);
+	console.log("video upload beginning");
 	//console.log(req);
 	//get values from POST body
 	let videoId=req.body.videoId;
@@ -114,7 +118,7 @@ app.post('/', (req, res) => {
 
 
 //testing on 3004
-app.listen(3004, () =>
+app.listen(process.env.PORT || 3004, () =>
   console.log('Example app listening on port 3004!'),
 );
 process.on('uncaughtException', function(err) {
