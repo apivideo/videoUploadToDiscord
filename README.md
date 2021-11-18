@@ -11,7 +11,8 @@
 [api.video](https://api.video) is the video infrastructure for product builders. Lightning fast video APIs for integrating, scaling, and managing on-demand & low latency live streaming features in your app.
 
 # videoUploadToDiscord
-NodeJS app to upload videos to a Discord Bot
+NodeJS app to upload videos to Discord via a Bot.
+
 Try it out at [upload.a.video/toDiscord](https://upload.a.video/toDiscord).
 
 ## Installation 
